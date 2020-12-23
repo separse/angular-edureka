@@ -1,0 +1,10 @@
+<div>
+    <ul *ngIf="students">
+        <li *ngFor="let student of students">
+            <p>ID: {{student.id}}</p>
+            <p>NAME: {{student.name}}</p>
+            <p>CITY: {{student.city}}</p>
+            <p>EMAIL: {{student.email}}</p>
+        </li>
+    </ul>
+</div>
