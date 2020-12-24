@@ -7,6 +7,8 @@ import { HomeComponent } from './home/home.component';
 import { ListComponent } from './list/list.component';
 import { CreateComponent } from './create/create.component';
 import { HeaderComponent } from './header/header.component';
+import { FormsModule } from '@angular/forms';
+import { ListDetailComponent } from './list-detail/list-detail.component';
 
 @NgModule({
   declarations: [
@@ -15,10 +17,12 @@ import { HeaderComponent } from './header/header.component';
     ListComponent,
     CreateComponent,
     HeaderComponent,
+    ListDetailComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

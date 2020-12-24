@@ -1,0 +1,8 @@
+<div *ngIf="selectedStudent">
+    SELECTED DETAILS:
+    <div>
+        <input type="text" [(ngModel)]="selectedStudent.name">
+    </div>
+    <p>CITY: {{selectedStudent.city}}</p>
+    <p>EMAIL: {{selectedStudent.email}}</p>
+</div>
