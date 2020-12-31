@@ -9,6 +9,7 @@ import { CreateComponent } from './create/create.component';
 import { HeaderComponent } from './header/header.component';
 import { FormsModule } from '@angular/forms';
 import { ListDetailComponent } from './list-detail/list-detail.component';
+import { FoadShariat6Component } from './foad-shariat-6/foad-shariat-6.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
@@ -19,6 +20,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     CreateComponent,
     HeaderComponent,
     ListDetailComponent,
+    FoadShariat6Component
   ],
   imports: [
     BrowserModule,
