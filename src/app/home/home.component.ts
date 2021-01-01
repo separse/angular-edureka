@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
+  starsWidth = [25, 46, 65, 80, 10];
   constructor() { }
 
   ngOnInit(): void {

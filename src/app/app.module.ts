@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { ListDetailComponent } from './list-detail/list-detail.component';
 import { FoadShariat6Component } from './foad-shariat-6/foad-shariat-6.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { StarComponent } from './star/star.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     CreateComponent,
     HeaderComponent,
     ListDetailComponent,
-    FoadShariat6Component
+    FoadShariat6Component,
+    StarComponent
   ],
   imports: [
     BrowserModule,
