@@ -1,0 +1,15 @@
+<form>
+    <div class="row">
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Name" #name>
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Email" #email>
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Password" #pass>
+        </div>
+    </div>
+    <button class="btn btn-primary m-1" type="submit" (click)="addUser(name.value, email.value, pass.value, $event)">Add
+        User</button>
+</form>
