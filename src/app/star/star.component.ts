@@ -1,4 +1,4 @@
-import { Component, Input } from "@angular/core";
+import { Component, EventEmitter, Input, Output } from "@angular/core";
 
 @Component({
     selector: 'app-star',
@@ -7,4 +7,8 @@ import { Component, Input } from "@angular/core";
 })
 export class StarComponent {
     @Input() starsWidth!: number;
+    @Output() rate = new EventEmitter<number>();
+    showRate() {
+        this.rate.emit(this.starsWidth / 90 * 5);
+    }
 }

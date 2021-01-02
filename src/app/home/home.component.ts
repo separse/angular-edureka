@@ -5,11 +5,10 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
   starsWidth = [25, 46, 65, 80, 10];
-  constructor() { }
-
-  ngOnInit(): void {
+  rate!: number;
+  showRate(e: number) {
+    this.rate = e;
   }
-
 }
