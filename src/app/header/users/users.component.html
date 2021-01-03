@@ -1,0 +1,10 @@
+<app-user [user]="user1"></app-user>
+<app-users-form (pushUser)="pushUser($event)"></app-users-form>
+<app-users-table [users]="users"></app-users-table>
+<select>
+    <ng-container *ngFor="let item of users1">
+        <ng-container *ngIf="item.pass>30">
+            <option [ngValue]="item">{{item.pass+' '+item.name+' '+item.email}}</option>
+        </ng-container>
+    </ng-container>
+</select>
