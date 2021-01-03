@@ -4,11 +4,19 @@ import { User } from "./user-interface";
 @Component({
     selector: 'app-users',
     template: `
+        <app-user [user]="user1"></app-user>
         <app-users-form (pushUser)="pushUser($event)"></app-users-form>
         <app-users-table [users]="users"></app-users-table>
     `
 })
 export class UsersComponent {
+    user1: User =
+        {
+            name: 'Rudil',
+            email: 'sepehrar@yahoo.com',
+            pass: '09180189098'
+        };
+
     users: User[] = [
         {
             name: 'Russia',

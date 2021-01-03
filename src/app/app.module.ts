@@ -16,6 +16,7 @@ import { UsersFormComponent } from './header/users/users-form/users-form.compone
 import { UsersTableComponent } from './header/users/users-table/users-table.component';
 import { ViewChildComponent } from './header/view-child/view-child.component';
 import { InnerViewChildComponent } from './header/view-child/inner-view-child/inner-view-child.component';
+import { UserComponent } from './header/users/user/user.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { InnerViewChildComponent } from './header/view-child/inner-view-child/in
     UsersFormComponent,
     UsersTableComponent,
     ViewChildComponent,
-    InnerViewChildComponent
+    InnerViewChildComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
