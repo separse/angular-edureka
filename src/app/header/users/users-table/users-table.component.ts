@@ -8,4 +8,10 @@ import { User } from "../user-interface";
 
 export class UsersTableComponent {
     @Input() users!: User[];
+    editMode = false;
+    public showEdit() {
+        this.editMode == true;
+        console.log('true');
+        
+    }
 }
