@@ -10,18 +10,10 @@
     <tbody>
         <tr *ngFor="let user of users; index as i">
             <th scope="row">{{ i + 1 }}</th>
-            <td>
-                <div *ngIf="editMode">
-                    <input type="text">
-                </div>
-                <div *ngIf="!editMode">
-                    {{ user.name }}
-                </div>
-
-            </td>
+            <td>{{ user.name }}</td>
             <td>{{ user.email }}</td>
             <td>{{ user.pass }}</td>
-            <td><button class="btn btn-warning" (click)="showEdit()">Edit</button></td>
+            <td><button class="btn btn-warning">Edit</button></td>
         </tr>
     </tbody>
 </table>

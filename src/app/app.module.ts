@@ -14,6 +14,8 @@ import { StarComponent } from './header/home/star/star.component';
 import { UsersComponent } from './header/users/users.component';
 import { UsersFormComponent } from './header/users/users-form/users-form.component';
 import { UsersTableComponent } from './header/users/users-table/users-table.component';
+import { ViewChildComponent } from './header/view-child/view-child.component';
+import { InnerViewChildComponent } from './header/view-child/inner-view-child/inner-view-child.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { UsersTableComponent } from './header/users/users-table/users-table.comp
     StarComponent,
     UsersComponent,
     UsersFormComponent,
-    UsersTableComponent
+    UsersTableComponent,
+    ViewChildComponent,
+    InnerViewChildComponent
   ],
   imports: [
     BrowserModule,

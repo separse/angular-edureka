@@ -3,7 +3,10 @@ import { User } from "./user-interface";
 
 @Component({
     selector: 'app-users',
-    templateUrl: './users.component.html'
+    template: `
+        <app-users-form (pushUser)="pushUser($event)"></app-users-form>
+        <app-users-table [users]="users"></app-users-table>
+    `
 })
 export class UsersComponent {
     users: User[] = [
