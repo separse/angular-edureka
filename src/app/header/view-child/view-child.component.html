@@ -1,8 +1,14 @@
-<app-inner-view-child></app-inner-view-child>
-<app-inner-view-child></app-inner-view-child>
-<app-inner-view-child></app-inner-view-child>
-<app-inner-view-child></app-inner-view-child>
-<app-inner-view-child></app-inner-view-child>
-<app-inner-view-child></app-inner-view-child>
+<app-inner-view-child>
+    <div #par showPar>1234567890</div>
+</app-inner-view-child>
+<button class="btn btn-warning" (click)=changePar()>Change Par Content</button>
+<hr>
+<!-- <app-inner-view-child>
+    <div show>
+        This is show class ng-content
+    </div>
+    <div #par showPar>1234567890</div>
+</app-inner-view-child>
+<hr> -->
 <p>Parent paragraph</p>
 <p #num2>22</p>
