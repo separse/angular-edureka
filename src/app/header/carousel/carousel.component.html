@@ -1,6 +1,14 @@
 <div class="m-3">
-    <input type="text" appColorChange>
+  <input type="text" appColorChange />
 </div>
-<div class="m-3" [appBackgroundChange]='backgroundColor'>
-    پس زمینه این ظرف پس از ورود و خروج موس تغییر می کند
+<div class="m-3" [appBackgroundChange]="backgroundColor">
+  پس زمینه این ظرف پس از ورود و خروج موس تغییر می کند
+</div>
+
+<div
+  *appCarousel="let image; from: images; autoPlay: 'Yes'; let ctrl = controller"
+>
+  <img [src]="image" />
+  <button (click)="ctrl.next()">NEXT</button>
+  <button (click)="ctrl.previous()">PREVIOUS</button>
 </div>
