@@ -17,6 +17,10 @@ import { UsersTableComponent } from './header/users/users-table/users-table.comp
 import { ViewChildComponent } from './header/view-child/view-child.component';
 import { InnerViewChildComponent } from './header/view-child/inner-view-child/inner-view-child.component';
 import { UserComponent } from './header/users/user/user.component';
+import { CarouselDirective } from './header/carousel/carousel.directive';
+import { CarouselComponent } from './header/carousel/carousel.component';
+import { ColorChangeDirective } from './header/carousel/color-change.directive';
+import { BackgroundChangeDirective } from './header/carousel/background-change.directive';
 
 @NgModule({
   declarations: [
@@ -33,7 +37,11 @@ import { UserComponent } from './header/users/user/user.component';
     UsersTableComponent,
     ViewChildComponent,
     InnerViewChildComponent,
-    UserComponent
+    UserComponent,
+    CarouselComponent,
+    CarouselDirective,
+    ColorChangeDirective,
+    BackgroundChangeDirective
   ],
   imports: [
     BrowserModule,

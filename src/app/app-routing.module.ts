@@ -7,6 +7,7 @@ import { ListComponent } from './header/list/list.component';
 import { StarComponent } from './header/home/star/star.component';
 import { UsersComponent } from './header/users/users.component';
 import { ViewChildComponent } from './header/view-child/view-child.component';
+import { CarouselComponent } from './header/carousel/carousel.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: '/home' },
@@ -16,7 +17,8 @@ const routes: Routes = [
   { path: 'foadShariat6', component: FoadShariat6Component },
   { path: 'star', component: StarComponent },
   { path: 'users', component: UsersComponent },
-  { path: 'viewChild', component: ViewChildComponent }
+  { path: 'viewChild', component: ViewChildComponent },
+  { path: 'carousel', component: CarouselComponent }
 ];
 
 @NgModule({
