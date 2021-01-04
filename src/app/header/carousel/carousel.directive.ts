@@ -15,15 +15,15 @@ export class CarouselDirective implements OnInit {
   index = 0;
   timer!: any;
 
-  @Input('appCarouselFrom') images!: string[];
-  @Input('appCarouselAutoPlay')
+  @Iut('appCarouselAutoPlay')
   set autoPlay(val: string) {
     val === 'No' ? this.stopAutoPlay() : this.runAutoPlay();
   }
 
   constructor(
     private templateRef: TemplateRef<ICarouselContext>,
-    private viewContainerRef: ViewContainerRef
+   nput('appCarouselFrom') images!: string[];
+  @Inp private viewContainerRef: ViewContainerRef
   ) {}
 
   ngOnInit(): void {
