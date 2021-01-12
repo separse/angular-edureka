@@ -1,5 +1,6 @@
 <app-star *ngFor="let item of starsWidth" [starsWidth]=item (rate)="showRate($event)"></app-star>
 <h3>{{rate | number: '1.1-1'}}</h3>
+<button class="btn btn-primary" (click)="goToUsers()">Go to Users</button>
 <div style="max-width:854px">
     <div style="position:relative;height:0;padding-bottom:56.25%"><iframe
             src="https://embed.ted.com/talks/colin_stokes_how_movies_teach_manhood" width="854" height="480"

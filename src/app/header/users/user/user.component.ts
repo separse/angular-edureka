@@ -1,9 +1,9 @@
-import { Component, Input, OnChanges, OnInit, SimpleChanges } from "@angular/core";
+import { Component, Input, OnChanges, OnInit } from "@angular/core";
 import { User } from "../user-interface";
 
 @Component({
     selector: 'app-user',
-    templateUrl: './user.component.html'
+    template: ''
 })
 
 export class UserComponent implements OnInit, OnChanges {
@@ -12,23 +12,13 @@ export class UserComponent implements OnInit, OnChanges {
 
     @Input() user!: User;
 
-    // @Input() set user(user: User) {
-    //     this._user = user;
-    //     this.counter++;
-    // }
-
-    // get user(): User {
-    //     return this._user;
-    // }
-
-
     counter = 0;
 
     ngOnInit(): void {
         console.log(this._user.name + ' ' + this.counter);
     }
 
-    ngOnChanges(changes: SimpleChanges): void {
+    ngOnChanges(): void {
         this._user = this.user;
         this.counter++;
     }

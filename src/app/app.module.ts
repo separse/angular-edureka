@@ -21,6 +21,8 @@ import { CarouselDirective } from './header/carousel/carousel.directive';
 import { CarouselComponent } from './header/carousel/carousel.component';
 import { ColorChangeDirective } from './header/carousel/color-change.directive';
 import { BackgroundChangeDirective } from './header/carousel/background-change.directive';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { TestUserComponent } from './header/users/test-user/test-user.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,9 @@ import { BackgroundChangeDirective } from './header/carousel/background-change.d
     CarouselComponent,
     CarouselDirective,
     ColorChangeDirective,
-    BackgroundChangeDirective
+    BackgroundChangeDirective,
+    NotFoundComponent,
+    TestUserComponent
   ],
   imports: [
     BrowserModule,

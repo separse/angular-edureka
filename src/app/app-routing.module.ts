@@ -8,6 +8,8 @@ import { StarComponent } from './header/home/star/star.component';
 import { UsersComponent } from './header/users/users.component';
 import { ViewChildComponent } from './header/view-child/view-child.component';
 import { CarouselComponent } from './header/carousel/carousel.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { TestUserComponent } from './header/users/test-user/test-user.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: '/home' },
@@ -17,12 +19,15 @@ const routes: Routes = [
   { path: 'foadShariat6', component: FoadShariat6Component },
   { path: 'star', component: StarComponent },
   { path: 'users', component: UsersComponent },
+  { path: 'users/:id', component: TestUserComponent },
   { path: 'viewChild', component: ViewChildComponent },
-  { path: 'carousel', component: CarouselComponent }
+  { path: 'carousel', component: CarouselComponent },
+  { path: 'notFound', component: NotFoundComponent },
+  { path: '**', redirectTo: '/notFound' },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

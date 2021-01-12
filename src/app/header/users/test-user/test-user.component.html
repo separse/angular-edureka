@@ -1,0 +1,7 @@
+<div *ngIf="isUserFound; else notFound">
+  <p>test-user works!</p>
+ {{selectedUser.id}}
+ {{selectedUser.name}}
+</div>
+<ng-template #notFound>Its not right!</ng-template>
+<a [routerLink]="['/users', '2']" (click)="isUserFound = true"><button>go to id 2</button></a>
