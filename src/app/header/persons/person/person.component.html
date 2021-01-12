@@ -1,0 +1,10 @@
+<div *ngIf="!editMode; else edit">
+  <div *ngIf="isPersonFound">
+    {{ selectedPerson.id }}
+    {{ selectedPerson.name }}
+  </div>
+  <button (click)="editPerson()" class="btn btn-primary">Edit</button>
+</div>
+<ng-template #edit>
+  <router-outlet></router-outlet>
+</ng-template>

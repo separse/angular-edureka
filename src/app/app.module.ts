@@ -22,7 +22,9 @@ import { CarouselComponent } from './header/carousel/carousel.component';
 import { ColorChangeDirective } from './header/carousel/color-change.directive';
 import { BackgroundChangeDirective } from './header/carousel/background-change.directive';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { TestUserComponent } from './header/users/test-user/test-user.component';
+import { PersonComponent } from './header/persons/person/person.component';
+import { PersonsComponent } from './header/persons/persons.component';
+import { EditPersonComponent } from './header/persons/edit-person/edit-person.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +47,9 @@ import { TestUserComponent } from './header/users/test-user/test-user.component'
     ColorChangeDirective,
     BackgroundChangeDirective,
     NotFoundComponent,
-    TestUserComponent
+    PersonsComponent,
+    PersonComponent,
+    EditPersonComponent
   ],
   imports: [
     BrowserModule,
